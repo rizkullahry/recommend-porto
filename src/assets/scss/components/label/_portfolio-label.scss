@@ -1,0 +1,7 @@
+.portfolio-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include typography(format, label);
+  white-space: nowrap;
+} 

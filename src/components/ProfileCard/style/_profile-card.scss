@@ -1,0 +1,112 @@
+.profile-card {
+    display: flex;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 320px;
+
+    &--padding {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    &--background-image {
+        height: 120px;
+        align-items: center;
+        aspect-ratio: 49/20;
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 2;
+        margin-top: -56px;
+    }
+
+    &--avatar {
+        width: 85.333px;
+        height: 85.333px;
+        flex-shrink: 0;
+        fill: #d9d9d9;
+        background: url('/image/person1.png') lightgray 50% / cover no-repeat;
+        border-radius: 100%;
+        border: 5.33px solid #084391;
+    }
+
+    &--content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    &--name {
+        align-self: stretch;
+        color: #333F47;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &--desc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        align-self: stretch;
+        overflow: hidden;
+        color: #333F47;
+        text-align: center;
+        text-overflow: ellipsis;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &--company {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &--company-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &--company-name {
+        color: #047cdd;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+    &--email {
+        color: #7E93A8;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+    }
+}
+

@@ -1,0 +1,15 @@
+.profile-social-card {
+    display: flex;
+    width: 326px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  .hashtag-post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+  }
