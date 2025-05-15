@@ -13,13 +13,12 @@ const props = defineProps<LabelProps>();
 
 const labelClass = computed(() => {
     return [
-        [`label-${props.variant}`],
+        [`label-${props.variant}`], //variant of the label
     ];
 });
-
 
 </script>
 
 <style scoped lang="scss">
-@import 'style/label';
+@import 'style/_label.scss';
 </style>
