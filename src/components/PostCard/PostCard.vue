@@ -50,6 +50,7 @@
             </div>
         </div>
         <span v-if="item.isEditComment" class="post-card__divider2">Show more comments</span>
+        
     </div>
 </template>
 
@@ -57,7 +58,7 @@
 import type { PostCardProps } from './types/PostCard';
 import { ref, computed } from 'vue';
 
-const items =defineProps<{
+const items = defineProps<{
     item: PostCardProps;
     data?: boolean;
 }>();
