@@ -1,5 +1,5 @@
 export interface AvatarProps {
-    name?: string;
+    name: string;
     image?: string;
     isShowName?: boolean;
     orientation?: 'horizontal' | 'vertical';
