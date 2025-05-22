@@ -1,3 +1,6 @@
+<!-- @Deprecated("You can use newest typography with Global")
+for example: 
+<span class="heading-medium"></span> -->
 <template>
     <span :class="labelClass">
         <slot>{{ text }}</slot>

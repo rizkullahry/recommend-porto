@@ -33,3 +33,28 @@ a,
     width: 100%;
   }
 }
+
+.heading{
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  color: red;
+}
+
+.heading-large{
+  font-size: 29px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.heading-medium{
+  font-size: 16px;
+ 
+}
+
+.text-primary-100{
+  color: #D5FADD;
+}
