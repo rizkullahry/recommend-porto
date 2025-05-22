@@ -6,7 +6,7 @@
             <span class="heading-large">Recommendations</span>
         </div>
         <div class="hashtag-card__posts">
-            <Label variant="h7">{{ calculatePost(1) }}</Label>
+            <Label variant="h7">{{ calculatePost() }}</Label>
 
         </div>
     </div>
@@ -15,8 +15,6 @@
 <script setup lang="ts">
 import type { HashtagCardProps } from "./types/HashtagCard";
 import { ref } from "vue";
-import Label from "@/components/Label/Label.vue";
-import Color from "@/components/Color/Color.vue";
 
 const props = defineProps<{
     item: HashtagCardProps;
@@ -24,8 +22,7 @@ const props = defineProps<{
 
 const item = ref(props.item);
 
-
-const calculatePost = (postCount: number) => `${postCount} ${postCount > 1 ? 'Posts' : 'Post'}`;
+const calculatePost = (item.postCount: number) => `${item.postCount} ${item.postCount > 1 ? 'Posts' : 'Post'}`;
 
 </script>
 
