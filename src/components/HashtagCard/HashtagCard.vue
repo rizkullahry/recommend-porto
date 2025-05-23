@@ -2,28 +2,22 @@
     <div class="hashtag-card">
         <div class="hashtag-card__title">
             <img class="hashtag-card__title-icon" :src="item.hashtagIcon" />
-            <!-- <Label variant="h4" style="color: #047CDD" color="blue" shade="500" class="hashtag-card__title-text">Recommendations</Label> -->
-            <span class="heading-large">Recommendations</span>
+            <span>Recommendations</span>
         </div>
         <div class="hashtag-card__posts">
-            <Label variant="h7">{{ calculatePost() }}</Label>
-
+            <span>12 Posts</span>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import type { HashtagCardProps } from "./types/HashtagCard";
-import { ref } from "vue";
 
 const props = defineProps<{
     item: HashtagCardProps;
 }>();
 
-const item = ref(props.item);
-
-const calculatePost = (item.postCount: number) => `${item.postCount} ${item.postCount > 1 ? 'Posts' : 'Post'}`;
-
+const { item } = props;
 </script>
 
 <style scoped lang="scss">
