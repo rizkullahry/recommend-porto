@@ -45,10 +45,11 @@ a,
 
 /* Top level headers */
 .heading-large {
-  font-family: 'Poppins';
+  @extend .heading;
+  /* font-family: 'Poppins'; */
   font-size: 35px;
-  font-style: normal;
-  font-weight: 700;
+  /* font-style: normal; */
+  /* font-weight: 700; */
   line-height: 40px;
 }
 
