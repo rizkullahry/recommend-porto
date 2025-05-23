@@ -35,7 +35,7 @@ a,
 }
  
 /* For screen title */
-.heading {
+.heading, .heading-large,.heading-medium, .heading-small {
   font-family: 'Poppins';
   font-size: 43px;
   font-style: normal;
@@ -45,19 +45,14 @@ a,
 
 /* Top level headers */
 .heading-large {
-  font-family: 'Poppins';
   font-size: 35px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
 }
 
 /* Main titles, use only once per page */
 .heading-medium {
-  font-family: 'Poppins';
   font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 34px;
   
   display: flex;
@@ -68,9 +63,7 @@ a,
 
 /* Identify key functionality */
 .heading-small {
-  font-family: 'Poppins';
   font-size: 25px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
 
@@ -81,7 +74,7 @@ a,
 }
 
 /* Sub-section & group headings */
-.sub-heading {
+.sub-heading, .sub-heading-medium, .sub-heading-capital, .sub-heading-small {
   font-family: 'Poppins';
   font-size: 20px;
   font-style: normal;
@@ -95,9 +88,7 @@ a,
 
 /* Deep headings and highlight important information pieces */
 .sub-heading-medium {
-  font-family: 'Poppins';
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
   line-height: 20px;
 
@@ -108,9 +99,7 @@ a,
 
 /* List items group heading */
 .sub-heading-capital {
-  font-family: 'Poppins';
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -123,9 +112,7 @@ a,
 
 /* Low level heading */
 .sub-heading-small {
-  font-family: 'Poppins';
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
 
@@ -135,7 +122,7 @@ a,
   align-self: stretch;
 } 
 
-.body {
+.body, .body-small, .body-bold, .body-italics, .body-link, .body-paragraph, .body-paragraph-indent, .body-extra-small {
   font-family: 'Poppins';
   font-size: 14px;
   font-style: normal;
@@ -148,9 +135,7 @@ a,
 }
 
 .body-small {
-  font-family: 'Poppins';
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 12px;
 
@@ -160,9 +145,7 @@ a,
 }
 
 .body-bold {
-  font-family: 'Poppins';
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
 
@@ -173,7 +156,6 @@ a,
 }
 
 .body-italics {
-  font-family: 'Poppins';
   font-size: 14px;
   font-style: italic;
   font-weight: 400;
@@ -186,9 +168,7 @@ a,
 }
 
 .body-link {
-  font-family: 'Poppins';
   font-size: 15px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
   text-decoration-line: underline;
@@ -204,9 +184,7 @@ a,
 }
 
 .body-paragraph {
-  font-family: 'Poppins';
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 
@@ -216,9 +194,7 @@ a,
 }
 
 .body-paragraph-indent {
-  font-family: 'Poppins';
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 
@@ -229,9 +205,7 @@ a,
 }
 
 .body-extra-small {
-  font-family: 'Poppins';
   font-size: 10px;
-  font-style: normal;
   font-weight: 400;
   line-height: 10px;
 }
