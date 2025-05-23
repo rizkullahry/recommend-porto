@@ -3,16 +3,15 @@
         <div class="profile-card--padding">
             <img loading="lazy" src="/image/profile-background.jpg" class="profile-card--background-image" />
             <div class="profile-card--content">
-                <div v-if="item.avatar" class="profile-card--avatar" :style="{ backgroundImage: `url(${item.avatar})` }"></div>
-                <div v-else class="profile-card--avatar">{{ abbreviation(item.name) }}</div>
+                <Avatar class="profile-card--avatar" :name="item.name" :image="item.avatar" size="xl" :isEditable="false" />
                 <div class="profile-card--content-text">
-                    <h2 class="profile-card--name">{{ item.name }}</h2>
-                    <p class="profile-card--desc">{{ item.desc }}</p>
+                    <span class="sub-heading-medium neutral-600 profile-card--name">{{ item.name }}</span>
+                    <span class="body-small neutral-600 profile-card--desc">{{ item.desc }}</span>
                     <div class="profile-card--company">
-                        <img loading="lazy" :src="item.locationIcon" class="profile-card--company-icon" />
-                        <p class="profile-card--company-name">{{ item.location }}</p>
+                        <Icon name="location_on" class="body-small info-200" :size="16" :isFilled="true"/>
+                        <span class="body-small info-200 profile-card--company-name">{{ item.location }}</span>
                     </div>
-                    <p class="profile-card--email">{{ item.email }}</p>
+                    <span class="body-small text-lightdark profile-card--email">{{ item.email }}</span>
                 </div>
             </div>
         </div>
@@ -22,20 +21,14 @@
 <script lang="ts" setup>
 import type { ProfileCardProps } from './types/ProfileCard';
 import { computed, ref } from 'vue';
+import Icon from '../Icon/Icon.vue';
+import Avatar from '../Avatar/Avatar.vue';
 
 const props = defineProps<{
     item: ProfileCardProps;
 }>();
 
 const item = ref(props.item);
-
-const abbreviation = computed(() => (name?: string) => {
-    return name
-        ?.split(" ")
-        .map((word) => word[0])
-        .join("")
-        .substring(0, 2);
-});
 </script>
 
 <style scoped lang="scss">

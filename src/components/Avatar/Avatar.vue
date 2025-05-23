@@ -101,5 +101,5 @@ const onClick = () => {
 </script>
 
 <style scoped lang="scss">
-@import './styles/avatar.scss';
+@import './style/_avatar.scss';
 </style>

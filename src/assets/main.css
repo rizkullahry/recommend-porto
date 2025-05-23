@@ -107,8 +107,6 @@ a,
   line-height: 20px;
 
   display: flex;
-  width: 148px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -166,8 +164,6 @@ a,
   line-height: 12px;
 
   display: flex;
-  width: 148px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }

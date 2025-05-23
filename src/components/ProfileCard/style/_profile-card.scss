@@ -39,7 +39,6 @@
         height: 85.333px;
         flex-shrink: 0;
         fill: #d9d9d9;
-        background: url('/image/person1.png') lightgray 50% / cover no-repeat;
         border-radius: 100%;
         border: 5.33px solid #084391;
     }
@@ -54,13 +53,8 @@
 
     &--name {
         align-self: stretch;
-        color: #333F47;
         text-align: center;
-        font-family: Poppins;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
     }
 
     &--desc {
@@ -69,12 +63,8 @@
         -webkit-line-clamp: 1;
         align-self: stretch;
         overflow: hidden;
-        color: #333F47;
         text-align: center;
         text-overflow: ellipsis;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
@@ -85,26 +75,13 @@
         gap: 4px;
     }
 
-    &--company-icon {
-        width: 16px;
-        height: 16px;
-    }
-
     &--company-name {
-        color: #047cdd;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &--email {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
