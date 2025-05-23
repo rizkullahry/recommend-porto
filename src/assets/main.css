@@ -61,7 +61,6 @@ a,
   line-height: 34px;
   
   display: flex;
-  height: 40px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -76,7 +75,6 @@ a,
   line-height: 26px;
 
   display: flex;
-  height: 40px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -91,8 +89,6 @@ a,
   line-height: 22px;
 
   display: flex;
-  width: 158px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -106,8 +102,6 @@ a,
   line-height: 20px;
 
   display: flex;
-  width: 148px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -122,7 +116,6 @@ a,
   text-transform: uppercase;
 
   display: flex;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -137,7 +130,6 @@ a,
   line-height: 16px;
 
   display: flex;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -151,8 +143,6 @@ a,
   line-height: 14px;
 
   display: flex;
-  width: 158px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -165,8 +155,6 @@ a,
   line-height: 12px;
 
   display: flex;
-  width: 148px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -179,7 +167,6 @@ a,
   line-height: 16px;
 
   display: flex;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -193,7 +180,6 @@ a,
   line-height: 16px;
 
   display: flex;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
@@ -213,8 +199,6 @@ a,
   text-underline-position: from-font;
 
   display: flex;
-  width: 158px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -227,8 +211,6 @@ a,
   line-height: 24px;
 
   display: flex;
-  width: 148px;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
 }
@@ -241,7 +223,6 @@ a,
   line-height: 24px;
 
   display: flex;
-  height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;

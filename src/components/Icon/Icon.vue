@@ -1,6 +1,6 @@
 <template>
     <i class="material-symbols-rounded"
-    :class="[colorClass, { 'material-symbols-fill': isFilled }]"
+    :class="[{ 'material-symbols-fill': isFilled }]"
     :style="sizeStyle">
         <slot>{{ name }}</slot>
     </i>
@@ -34,11 +34,6 @@ const checkTypeCase = () => {
         return
     }
 }
-
-const colorClass = computed(() => [
-    `text-${props.color}-${props.shade}`,
-    `bg-${props.backgroundColor}-${props.backgroundShade}`
-])
 
 const sizeStyle = computed(() => ({
     fontSize: `${props.size}px`,

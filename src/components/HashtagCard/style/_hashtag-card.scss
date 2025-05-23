@@ -15,12 +15,13 @@
         gap: 4px;
     }
 
-    &__title-icon {
-        width: 24px;
-        height: 24px;
+    &__title-text {
+        font-weight: 500;
+        line-height: 24px;
     }
 
     &__posts {
-        color: #7E93A8;
+        font-weight: 500;
+        line-height: 16px;
     }
 }
