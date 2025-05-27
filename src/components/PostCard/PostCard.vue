@@ -4,7 +4,7 @@
       <img loading="lazy" :src="item.userProfile.avatar" class="post-card__header-avatar" />
         <div class="post-card__header-content">
           <div class="post-card__header-content-company">
-            <h2 class="post-card__header-content-company-name">{{ item.userProfile.username }}</h2>
+            <h2 class="sub-heading-medium neutral-600post-card__header-content-company-name">{{ item.userProfile.username }}</h2>
               <img loading="lazy" src="/image/more-icon.svg" class="post-card__header-content-more-icon" />
           </div>
                 <div class="post-card__header-content-position">
