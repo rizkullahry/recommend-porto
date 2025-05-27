@@ -1,7 +1,7 @@
 <template>
     <div class="hashtag-card">
         <div class="hashtag-card__title">
-            <Icon name="tag" class="info-200" :size="24" />
+            <Icon name="tag" class="sub-heading info-200" :size="24" />
             <span class="sub-heading info-200 hashtag-card__title-text">Recommendations</span>
         </div>
         <span class="body-small neutral-500 hashtag-card__posts">{{ calculatePostCount() }}</span>
