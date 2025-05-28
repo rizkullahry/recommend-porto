@@ -1,0 +1,216 @@
+/* For screen title */
+.heading {
+    font-family: 'Poppins';
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  /* Top level headers */
+  .heading-large {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  
+  /* Main titles, use only once per page */
+  .heading-medium {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  /* Identify key functionality */
+  .heading-small {
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  /* Sub-section & group headings */
+  .sub-heading {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Deep headings and highlight important information pieces */
+  .sub-heading-medium {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  
+    display: flex;
+    width: 148px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* List items group heading */
+  .sub-heading-capital {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  /* Low level heading */
+  .sub-heading-small {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  } 
+  
+  .body {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+  
+    display: flex;
+    width: 158px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body-small {
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body-bold {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  .body-italics {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px;
+  
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  .body-link {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  
+    display: flex;
+    width: 158px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body-paragraph {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  
+    display: flex;
+    width: 148px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .body-paragraph-indent {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  
+    display: flex;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+  }
+  
+  .body-extra-small {
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+  }

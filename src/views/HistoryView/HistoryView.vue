@@ -4,7 +4,7 @@
         <div class="history-view__main">    
             <div class="history-view__back-button">
                 <img loading="lazy" src="/image/arrow-back.svg" class="history-view__back-button-icon">
-                <p class="history-view__back-button-name">Back to Home</p>
+                <span class="history-view__back-button-name">Back to Home</span>
             </div>
             <div class="history-view__sections">
                 <div class="history-view__profile-section">
