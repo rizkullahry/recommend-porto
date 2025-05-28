@@ -1,0 +1,172 @@
+// Color Variables
+$colors: (
+  'primary': (
+    '000': #DBFDEA,
+    '100': #B1ECCA,
+    '200': #87DBAB,
+    '300': #5CCB8B,
+    '400': #32BA6C,
+    '500': #08A94C,
+    '600': #06873D,
+    '700': #05652E,
+    '800': #03441E,
+    '900': #02220F
+  ),
+  'secondary': (
+    '000': #FFFFFF,
+    '100': #FEEAD2,
+    '200': #FCD6A5,
+    '300': #FBC177,
+    '400': #F9AD4A,
+    '500': #F8981D,
+    '600': #C67A17,
+    '700': #955B11,
+    '800': #633D0C,
+    '900': #321E06
+  ),
+  'grey': (
+    '000': #FFFFFF,
+    '100': #E5E9EE,
+    '200': #CBD4DC,
+    '300': #B2BECB,
+    '400': #98A9B9,
+    '500': #7E93A8,
+    '600': #657686,
+    '700': #4C5865,
+    '800': #323B43,
+    '900': #191D22    
+  ),
+  'light-grey': (
+    '000': #FFFFFF,
+    '100': #F3F5F6,
+    '200': #E6EBED,
+    '300': #DAE0E5,
+    '400': #CDD6DC,
+    '500': #C1CCD3,
+    '600': #A3AEB5,
+    '700': #869198,
+    '800': #68737A,
+    '900': #4B565D
+  ),
+  'blue': (
+    '000': #FFFFFF,
+    '100': #CDE5F8,
+    '200': #9BCBF1,
+    '300': #68B0EB,
+    '400': #3696E4,
+    '500': #047CDD,
+    '600': #0363B1,
+    '700': #024A85,
+    '800': #023258,
+    '900': #01192C
+  ),
+  'yellow': (
+    '000': #FFFFFF,
+    '100': #FEF6CD,
+    '200': #FEED9B,
+    '300': #FDE569,
+    '400': #FDDC37,
+    '500': #FCD305,
+    '600': #CAA904,
+    '700': #977F03,
+    '800': #655402,
+    '900': #322A01
+  ),
+  'red': (
+    '000': #FFFFFF,
+    '100': #F7D4D4,
+    '200': #EFA9A8,
+    '300': #E67F7D,
+    '400': #DE5451,
+    '500': #D62926,
+    '600': #AB211E,
+    '700': #801917,
+    '800': #56100F,
+    '900': #2B0808
+  ),
+  'pink': (
+    '000': #FFFFFF,
+    '100': #F5D1E6,
+    '200': #EBA3CD,
+    '300': #E174B4,
+    '400': #D7469B,
+    '500': #CD1882,
+    '600': #A41368,
+    '700': #7B0E4E,
+    '800': #520A34,
+    '900': #29051A
+  ),
+  'light-purple': (
+    '000': #F8DCFD,
+    '100': #E3B2EC,
+    '200': #CE87DC,
+    '300': #B95DCB,
+    '400': #A432BB,
+    '500': #8F08AA,
+    '600': #720688,
+    '700': #560566,
+    '800': #390344,
+    '900': #1D0222
+  ),
+  'purple': (
+    '000': #FFFFFF,
+    '100': #E0CEF5,
+    '200': #C19DEB,
+    '300': #A36CE0,
+    '400': #843BD6,
+    '500': #650ACC,
+    '600': #5108A3,
+    '700': #3D067A,
+    '800': #280452,
+    '900': #140229
+  ),
+  'tosca': (
+    '000': #D9F1F6,
+    '100': #B4D8E0,
+    '200': #8FBFCA,
+    '300': #69A6B5,
+    '400': #448D9F,
+    '500': #1F7489,
+    '600': #195D6E,
+    '700': #134652,
+    '800': #0C2E37,
+    '900': #06171B
+  ),
+  'neutral': (
+    '000': #FFFFFF,
+    '100': #F5F8FA,
+    '200': #E8ECF5,
+    '300': #D2DFE8,
+    '400': #B2BFC8,
+    '500': #7E93A8,
+    '600': #333F47,
+    '700': #1A2730,
+    '800': #000F19
+  )
+);
+
+// Color Mixins
+@mixin color-variant($color-name, $shade) {
+  color: map-get(map-get($colors, $color-name), $shade);
+}
+
+@mixin background-variant($color-name, $shade) {
+  background-color: map-get(map-get($colors, $color-name), $shade);
+}
+
+// Color Utility Classes
+@each $color-name, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{$color-name}-#{$shade} {
+      @include color-variant($color-name, $shade);
+    }
+    
+    .bg-#{$color-name}-#{$shade} {
+      @include background-variant($color-name, $shade);
+    }
+  }
+}
+
+// Usage Examples:
+// .text-primary-500 { color: #3385FF; }
+// .bg-error-600 { background-color: #FF0000; }

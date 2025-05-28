@@ -1,3 +1,6 @@
+<!-- @Deprecated("You can use newest typography with Global")
+for example: 
+<span class="heading-medium"></span> -->
 <template>
     <span :class="labelClass">
         <slot>{{ text }}</slot>
@@ -13,13 +16,12 @@ const props = defineProps<LabelProps>();
 
 const labelClass = computed(() => {
     return [
-        [`label-${props.variant}`],
+        [`label-${props.variant}`], //variant of the label
     ];
 });
-
 
 </script>
 
 <style scoped lang="scss">
-@import 'style/label';
+@import 'style/_label.scss';
 </style>
