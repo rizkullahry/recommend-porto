@@ -1,74 +1,65 @@
 <template>
   <div class="post-card">
     <div class="post-card__header">
-      <img loading="lazy" :src="item.userProfile.avatar" class="post-card__header-avatar" />
+      <Avatar class="post-card__header-avatar" :name="item.userProfile.username" :image="item.userProfile.avatar" size="lg" :isEditable="true" />
         <div class="post-card__header-content">
-          <div class="post-card__header-content-company">
-            <h2 class="post-card__header-content-company-name">{{ item.userProfile.username }}</h2>
-              <img loading="lazy" src="/image/more-icon.svg" class="post-card__header-content-more-icon" />
+          <div class="post-card__header-content-user">
+            <span class="sub-heading-medium neutral-600 post-card__header-content-username">{{ item.userProfile.username }}</span>
+              <Icon name="more_vert" class="heading-small neutral-500 post-card__header-content-more-icon" :size="24" :isFilled="true"/>
           </div>
                 <div class="post-card__header-content-position">
-                    <h4 class="post-card__header-content-position-name">{{ item.userProfile.position }}</h4>
-                    <h4 class="post-card__header-content-position-minus">-</h4>
+                    <span class="body-small neutral-600 post-card__header-content-position-name">{{ item.userProfile.position }}</span>
+                    <span class="body-small neutral-600 post-card__header-content-position-minus">-</span>
                     <div class="post-card__header-content-address">
-                        <img loading="lazy" src="/image/place-icon.svg" class="post-card__header-content-address-icon" />
-                        <h4 class="post-card__header-content-address-name">{{ item.userProfile.address }}</h4>
+                        <Icon name="location_on" class="sub-heading-medium info-200 post-card__header-content-address-icon" :size="16" :isFilled="true" />
+                        <span class="body-small info-200 post-card__header-content-address-name">{{ item.userProfile.address }}</span>
                     </div>
                 </div>
-                <p class="post-card__header-content-time">{{ item.userProfile.postTime }}</p>
+                <span class="body-small neutral-500 post-card__header-content-time">{{ item.userProfile.postTime }}</span>
           </div>
         </div>
 
         <div class="post-card__content">
-            <h3 class="post-card__content-title">{{ item.title }}</h3>
-            <p class="post-card__content-desc" :style="{ whiteSpace: 'pre-line' }" v-html="item.desc" />
-            <p class="post-card__content-desc-more">...see more</p>
+            <p class="sub-heading-small neutral-600 post-card__content-title">{{ item.title }}</p>
+            <p class="body-small neutral-600 post-card__content-desc" :style="{ whiteSpace: 'pre-line' }" v-html="trimmedDesc" />
+            <p v-if="isTrimmable"class="body-small neutral-500 post-card__content-desc-more" @click="toggleShowFullDesc">{{ showFullDesc ? "see less" : "...see more" }}</p>
         </div>
 
         <div class="post-card__engagements">
-            <p class="post-card__engagements-likes">{{ item.likes }}</p>
-            <p class="post-card__engagements-likes-name">{{ item.likesName }}</p>
-            <p class="post-card__engagements-border">|</p>
-            <p class="post-card__engagements-comments" v-if="!item.commentsDisable">{{ item.comments }} {{ item.commentsName }}</p>
+            <span class="body-small neutral-500 post-card__engagements-likes">{{ item.likes }} {{ isMoreLike }}</span>
+            <span class="body-small neutral-500 post-card__engagements-border">{{ isLikeAndComment }}</span>
+            <span class="body-small neutral-500 post-card__engagements-comments" v-if="!item.commentsDisable">{{ item.comments }} {{ isMoreComment }}</span>
         </div>
         <hr class="post-card__divider1"></hr>
         <div class="post-card__actions">
-            <div class="post-card__actions-like" @click="item.isLike = !item.isLike">
-                <!-- <span loading="lazy" src="/image/like-icon.svg" class="post-card__actions-like-icon"></span> -->
-                <span class="material-symbols-outlined" :style="{ color: item.isLike ? 'green' : 'gray' }">thumb_up</span>
-                <p class="post-card__actions-like-name" :style="{ color: item.isLike ? 'green' : 'gray' }">Like</p>
+            <div class="post-card__actions-like" @click="toggleLike">
+                <Icon name="thumb_up" :size="16" :isFilled="isLiked" :class="['body-small post-card__actions-like-icon', isLiked ? 'primary-500' : 'neutral-500']" />
+                <span :class="['body-small post-card__actions-like-name', isLiked ? 'primary-500' : 'neutral-500']">Like</span>
             </div>
-            <div class="post-card__actions-comment" @click="item.isEditComment = !item.isEditComment">
-                <!-- <img loading="lazy" src="/image/chat-icon.svg" :style="{ color: !item.isEditComment ? 'gray' : 'green' }" class="post-card__actions-comment-icon" /> -->
-                <span class="material-symbols-outlined" :style="{ color: !item.isEditComment ? 'gray' : 'green' }">chat</span>
-                <p class="post-card__actions-comment-name" :style="{ color: !item.isEditComment ? 'gray' : 'green' }">{{ !item.commentsDisable? "Comment" : "Comment Disabled" }}</p>
+            <div class="post-card__actions-comment" @click="toggleComment">
+                <Icon name="chat" :size="16" :isFilled="isCommented && !item.commentsDisable" :class="['body-small post-card__actions-comment-icon', isCommented && !item.commentsDisable? 'primary-500' : 'neutral-500']" />
+                <span :class="['body-small post-card__actions-comment-name', isCommented && !item.commentsDisable ? 'primary-500' : 'neutral-500']">{{ !item.commentsDisable? "Comment" : "Comment Disabled" }}</span>
             </div>
-            <div class="post-card__actions-copy" @click="item.isCopy = !item.isCopy">
-                <!-- <img loading="lazy" src="/image/copy-icon.svg" :style="{ color: !item.isCopy ? 'gray' : 'green' }" class="post-card__actions-copy-icon" /> -->
-                <span class="material-symbols-outlined" :class="spanClass">content_copy</span>
-                <p class="post-card__actions-copy-name" :style="{ color: !item.isCopy ? 'gray' : 'green' }">{{ !item.isCopy ? "Copy Link" : "Copied" }}</p> 
+            <div class="post-card__actions-copy" @click="toggleCopy">
+                <Icon name="content_copy" :size="16" :isFilled="isCopied" :class="['body-small post-card__actions-copy-icon', isCopied ? 'primary-500' : 'neutral-500']" />
+                <span :class="['body-small post-card__actions-copy-name', isCopied ? 'primary-500' : 'neutral-500']">{{ !isCopied ? "Copy Link" : "Copied" }}</span> 
             </div>
         </div>
-        <span v-if="item.isEditComment" class="post-card__divider2">Show more comments</span>
+        <hr v-if="!item.commentsDisable || (item.commentsData?.length === 0)" class="post-card__divider2"></hr>
+        <span v-if="item.isEditComment" class="post-card__more-comments">Show more comments</span>
     </div>
 </template>
 
 <script setup lang="ts">
 import type { PostCardProps } from './types/PostCard';
 import { ref, computed } from 'vue';
+import Avatar from '../Avatar/Avatar.vue';
+import Icon from '../Icon/Icon.vue';
 
-const items =defineProps<{
+const items = defineProps<{
     item: PostCardProps;
     data?: boolean;
 }>();
-
-const spanClass = computed(() => {
-    return !items.item.isCopy ? "post-card__actions-copy-icon-gray" : "post-card__actions-copy-icon-green";
-});
-
-const isMoreLike = computed(() => {
-    return items.item.likes > 1 ? "Likes" : "Like";
-});
 
 const getInitials = (name: string): string => {
     const initials =name
@@ -79,9 +70,75 @@ const getInitials = (name: string): string => {
         return initials;
 };
 
+const maxLength = 200;
+const showFullDesc = ref(false);
 
+const trimmedDesc = computed(() => {
+    if (showFullDesc.value || (items.item?.desc?.length ?? 0) <= maxLength) {
+        return items.item?.desc;
+    }
+    return items.item?.desc?.slice(0, maxLength) + '...';
+});
+
+const isTrimmable = computed(() => (items.item?.desc?.length ?? 0) > maxLength);
+
+const toggleShowFullDesc = () => {
+    showFullDesc.value = !showFullDesc.value;
+}
+
+const isMoreLike = computed(() => {
+    if ((items.item.likes ?? 0) > 1) {
+        return "Likes";
+    } else if ((items.item.likes ?? 0) === 1) {
+        return "Like";
+    } else {
+        return "";
+    }
+});
+
+const isMoreComment = computed(() => {
+    if ((items.item.comments ?? 0) > 1) {
+        return "Comments";
+    } else if ((items.item.comments ?? 0) === 1) {
+        return "Comment";
+    } else {
+        return "";
+    }
+});
+
+const isLikeAndComment = computed(() => {
+    return (items.item.likes ?? 0) > 0 && (items.item.comments ?? 0) > 0 ? "|" : "";
+});
+
+const isLiked = ref(items.item.isLike);
+
+const toggleLike = () => {
+    isLiked.value = !isLiked.value;
+}
+
+const isCommented = ref(items.item.isEditComment);
+
+const toggleComment = () => {
+    isCommented.value = !isCommented.value;
+}
+
+const isCopied = ref(items.item.isCopy);
+
+const toggleCopy = () => {
+    isCopied.value = true;
+
+    setTimeout(() => {
+        isCopied.value = false;
+    }, 3000);
+}
+
+const spanClass = computed(() => {
+    return !items.item.isCopy ? "post-card__actions-copy-icon-gray" : "post-card__actions-copy-icon-green";
+});
 </script>
 
 <style scoped lang="scss">
 @import 'style/post-card';
+@import '../Avatar/style/_avatar.scss';
+@import '../Icon/style/_icon.scss';
 </style>

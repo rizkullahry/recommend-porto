@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
     background-color: #fff;
     border-radius: 30px;
     width: 320px;
@@ -52,7 +51,6 @@
     }
 
     &--name {
-        align-self: stretch;
         text-align: center;
         font-size: 16px;
     }

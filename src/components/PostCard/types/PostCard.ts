@@ -12,15 +12,13 @@ export interface PostCardProps {
     userProfile: UserProfileProps;
     title?: string;
     desc?: string;
-    likes: number; 
+    likes?: number; 
     comments?: number;
-    likesName?: string;
-    commentsName?: string;
     commentsDisable?: boolean;
     isLike?: boolean;
     isEditComment?: boolean;
     isCopy?: boolean;
-    commentsData: PostCardCommentProps[];
+    commentsData?: PostCardCommentProps[];
 }
 
 interface image {
