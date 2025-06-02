@@ -46,29 +46,29 @@ export const dataPostCard: PostCardProps[] = [
   },
   {
     userProfile: {
-      avatar: '/image/postbuma-avatar.png',
-      username: 'BUMA',
-      position: 'Intercom',
-      address: 'BUMA HO',
-      postTime: 'Yesterday at 17:06'
+      avatar: '/image/recommend-profile2.jpg',
+      username: 'Daniel Kwan',
+      position: 'Senior Product Manager',
+      address: 'BrightLayer Technologies',
+      postTime: 'Yesterday at 14:27'
     },
-    title: 'Memorandum Pengaturan Sistem Kerja Hybrid Working',
-    desc: 'Yth. Rekan-rekan BUMA,\nBersama ini kami informasikan Memorandum No. MEMO/DIR/0014/VII/2023 perihal Pengaturan Sistem Kerja Hybrid Working. Untuk informasi selengkapnya, silakan mengunduh Memorandum terlampir.\n\n Demikian Memorandum ini kami sampaikan, terima kasih atas perhatiannya. <span style="color: #007bff; font-weight: 500;">#BukitMakmur</span>',  
+    title: "Proactive, Empathetic, and Technically Sharp",
+    desc: 'Rizku combines strategic clarity with sharp execution. During our six-month collaboration, he consistently turned complex challenges into focused, actionable plans. His solutions helped reduce design-to-dev time by 25%, and his presence lifted the entire team’s performance. Reliable under pressure and always composed, Rizku is someone I’d work with again without hesitation.<span style="color: #007bff; font-weight: 500;">#Recommended</span>',  
     likes: 38,
     commentsDisable: true
   },
   {
     userProfile: {
-      avatar: '/image/post3-avatar.png',
-      username: 'Mahfud Alamin',
-      position: 'Superintendent Production LAT',
-      address: 'BUMA LAT',
-      postTime: '02 Agu 2023 at 17:06'
+      avatar: '/image/recommend-profile3.jpg',
+      username: 'Michelle Anggraeni',
+      position: 'Engineering Manager',
+      address: 'Ardent Labs',
+      postTime: '31 May 2025 at 19:49'
     },
-    title: 'Rapat Umum Pemegang Saham Tahunan',
-    desc: 'Saatnya kembali berkumpul dalam momentum penting tahunan kami! Kami dengan bangga mengundang seluruh pemegang saham untuk bergabung dalam Rapat Umum Pemegang Saham Tahunan (RUPST) kami dalam industri pertambangan. Acara ini merupakan kesempatan berharga untuk berbagi pencapaian kami sepanjang tahun, strategi masa depan, dan melibatkan pemegang saham dalam pengambilan keputusan yang mengarah ke kesuksesan bersama. ...',
+    title: 'Analytical, Creative, and Exceptionally Driven',
+    desc: 'Rizku quickly proved himself as a standout contributor. He introduced a front-end coding standard that became a team-wide benchmark and significantly cut onboarding time. He’s sharp, fast to adapt, and blends creativity with technical rigor—someone who elevates any project he’s part of.',
     likes: 57,
-    comments: 25,
+    comments: 8,
     commentsDisable: false,
     commentsData: [{
       name: 'Jane Doe',
@@ -108,14 +108,14 @@ export const dataPostCard: PostCardProps[] = [
   },
   {
     userProfile: {
-      avatar: '/image/post4-avatar.png',
-      username: 'Sarah Annisa',
-      position: 'Analyst - HR Development ADT',
-      address: 'BUMA ADT',
-      postTime: '05 Agu 2023 at 17:06'
+      avatar: '/image/recommend-profile4.jpg',
+      username: 'Joshua Hartono',
+      position: 'Lead UX Engineer',
+      address: 'CloudNova Studio',
+      postTime: '25 May 2025 at 10:02'
     },
-    title: 'Bekerja di BUMA',
-    desc: 'Dunia pertambangan batu bara telah memberi saya banyak pelajaran berharga. Setiap hari di lapangan adalah tantangan yang menguji batas kemampuan dan ketahanan. Meskipun kerasnya kondisi kerja, saya bangga menjadi bagian dari industri ini yang memainkan peran penting dalam menyediakan energi untuk dunia. Terima kasih kepada semua rekan kerja yang selalu bekerja keras dan menjaga keselamatan. 🛠️🌏💪 ...',
+    title: 'Analytical, Creative, and Exceptionally Driven',
+    desc: 'Working with Rizku was a refreshing experience. He brings empathy, curiosity, and technical sharpness to everything he does. Whether leading usability reviews or diving into Vue.js architecture, Rizku stays focused, user-driven, and helpful to the entire team. A thoughtful contributor who makes everyone better.',
     likes: 22,
     commentsDisable: false
   }

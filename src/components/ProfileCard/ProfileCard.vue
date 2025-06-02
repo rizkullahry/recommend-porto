@@ -3,7 +3,7 @@
         <div class="profile-card--padding">
             <img loading="lazy" src="/image/profile-background.jpg" class="profile-card--background-image" />
             <div class="profile-card--content">
-                <Avatar class="profile-card--avatar" :name="item.name" :image="item.avatar" size="xl" :isEditable="false" />
+                <Avatar class="profile-card--avatar" :name="item.name" :image="item.avatar" size="xl" :isEditable="true" />
                 <div class="profile-card--content-text">
                     <span class="sub-heading-medium neutral-600 profile-card--name">{{ item.name }}</span>
                     <span class="body-small neutral-600 profile-card--desc">{{ item.desc }}</span>

@@ -1,7 +1,7 @@
 <template>
   <div class="post-card">
     <div class="post-card__header">
-      <Avatar class="post-card__header-avatar" :name="item.userProfile.username" :image="item.userProfile.avatar" size="lg" :isEditable="true" />
+      <Avatar class="post-card__header-avatar" :name="item.userProfile.username" :image="item.userProfile.avatar" size="lg" :isEditable="false" />
         <div class="post-card__header-content">
           <div class="post-card__header-content-user">
             <span class="sub-heading-medium neutral-600 post-card__header-content-username">{{ item.userProfile.username }}</span>
@@ -45,7 +45,7 @@
                 <span :class="['body-small post-card__actions-copy-name', isCopied ? 'primary-500' : 'neutral-500']">{{ !isCopied ? "Copy Link" : "Copied" }}</span> 
             </div>
         </div>
-        <hr v-if="!item.commentsDisable || (item.commentsData?.length === 0)" class="post-card__divider2"></hr>
+        <hr v-if="!item.commentsDisable && (item.commentsData?.length ?? 0) > 0" class="post-card__divider2"></hr>
         <span v-if="item.isEditComment" class="post-card__more-comments">Show more comments</span>
     </div>
 </template>
@@ -70,7 +70,7 @@ const getInitials = (name: string): string => {
         return initials;
 };
 
-const maxLength = 200;
+const maxLength = 350;
 const showFullDesc = ref(false);
 
 const trimmedDesc = computed(() => {
