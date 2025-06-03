@@ -1,6 +1,4 @@
 <template>
-    <!-- <img src="../../../public/image/image7.png"/> -->
-
     <div class="post-card-comments">
         <div class="post-card-comments__header">
             <h1 v-if="!item.avatar" class="post-card-comments__header-avatar">

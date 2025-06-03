@@ -22,7 +22,7 @@
                                 :key="`comment-${index}`" 
                                 :item="comment" />
                         </template>
-                            <div v-if="post.commentsData?.length > 1" class="history-view__more-comments">
+                            <div class="history-view__more-comments">
                                 <p class="history-view__more-comments-name">Show more comments</p>
                             </div>
                     </div>

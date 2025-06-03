@@ -1,6 +1,6 @@
 @import './base.css';
-@import '../foundations/color.css';
 @import '../foundations/typography.css';
+@import '../foundations/color.css';
 
 #app {
   max-width: 1280px;
