@@ -3,7 +3,7 @@
         <Header :item="dataHeader" />
         <div class="history-view__main">    
             <div class="history-view__back-button">
-                <img loading="lazy" src="/image/arrow-back.svg" class="history-view__back-button-icon">
+                <Icon name="arrow_back" class="history-view__back-button-icon" :size="16" :isFilled="true"/>
                 <p class="history-view__back-button-name">Back to Home</p>
             </div>
             <div class="history-view__sections">
@@ -29,6 +29,15 @@
                 </div>
             </div>
         </div>
+        <!-- <button class="floating-add-button" @click="showAddPost=true">
+            <icon name="add" :size="24" :isFilled="true" />
+        </button>
+
+        <div v-if="showAddPost" class="modal-overlay">
+            <div class="modal-content">
+                <AddPostForm @close="showAddPost=false" @add-post="addPost" />
+            </div>
+        </div> -->
     </div>
 </template>
 
@@ -50,6 +59,7 @@ const dataPost = ref(dataPostCard);
 const showMoreComments = (post: number) => {
   console.log('Show more comments for post:', post);
 };
+
 </script>
 
 <style scoped lang="scss">
