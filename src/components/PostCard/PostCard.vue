@@ -45,7 +45,7 @@
                 <span :class="['body-small post-card__actions-copy-name', isCopied ? 'primary-500' : 'neutral-500']">{{ !isCopied ? "Copy Link" : "Copied" }}</span> 
             </div>
         </div>
-        <hr v-if="!item.commentsDisable && (item.commentsData?.length ?? 0) > 0" class="post-card__divider2"></hr>
+        <hr v-if="!item.commentsDisable && (item.commentsData?.length ?? 0) > 0 && !item.isEditComment" class="post-card__divider2"></hr>
         <span v-if="item.isEditComment" class="post-card__more-comments">Show more comments</span>
     </div>
 </template>
