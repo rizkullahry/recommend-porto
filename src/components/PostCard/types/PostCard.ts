@@ -10,6 +10,7 @@ export interface UserProfileProps {
 }
 
 export interface PostCardProps {
+    id: number;
     userProfile: UserProfileProps;
     title?: string;
     desc?: string;

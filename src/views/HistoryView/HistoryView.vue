@@ -3,7 +3,7 @@
         <Header :item="dataHeader" />
         <div class="history-view__main">    
             <div class="history-view__back-button">
-                <img loading="lazy" src="/image/arrow-back.svg" class="history-view__back-button-icon">
+                <Icon name="arrow_back" class="history-view__back-button-icon" :size="16" :isFilled="true"/>
                 <span class="history-view__back-button-name">Back to Home</span>
             </div>
             <div class="history-view__sections">

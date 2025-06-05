@@ -3,6 +3,7 @@ import type { PostCardProps } from '../types/PostCard';
 
 export const dataPostCard: PostCardProps[] = [
   {
+    id: 1,
     userProfile: {
       avatar: '/image/recommend-profile1.jpg', 
       username: 'Lena Morales',
@@ -46,6 +47,7 @@ export const dataPostCard: PostCardProps[] = [
     // hasComments: true
   },
   {
+    id: 2,
     userProfile: {
       avatar: '/image/recommend-profile2.jpg',
       username: 'Daniel Kwan',
@@ -60,6 +62,7 @@ export const dataPostCard: PostCardProps[] = [
     commentsDisable: true
   },
   {
+    id: 3,
     userProfile: {
       avatar: '/image/recommend-profile3.jpg',
       username: 'Michelle Anggraeni',
@@ -110,6 +113,7 @@ export const dataPostCard: PostCardProps[] = [
   }]
   },
   {
+    id: 4,
     userProfile: {
       avatar: '/image/recommend-profile4.jpg',
       username: 'Joshua Hartono',

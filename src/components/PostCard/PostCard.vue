@@ -20,7 +20,7 @@
         </div>
 
         <div class="post-card__content">
-            <p class="sub-heading-small neutral-600 post-card__content-title">{{ item.title }}</p>
+            <p @click="showID(item.id)" class="sub-heading-small neutral-600 post-card__content-title">{{ item.title }}</p>
             <p class="body-small neutral-600 post-card__content-desc" :style="{ whiteSpace: 'pre-line' }" v-html="trimmedDesc" />
             <p v-if="isTrimmable"class="body-small neutral-500 post-card__content-desc-more" @click="toggleShowFullDesc">{{ showFullDesc ? "see less" : "...see more" }}</p>
         </div>
@@ -132,6 +132,10 @@ const toggleCopy = () => {
 const spanClass = computed(() => {
     return !items.item.isCopy ? "post-card__actions-copy-icon-gray" : "post-card__actions-copy-icon-green";
 });
+
+const showID = (id: number) => {
+    console.log(id);
+}
 </script>
 
 <style scoped lang="scss">
