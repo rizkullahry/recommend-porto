@@ -25,6 +25,7 @@
         background: url('/image/buma avatar post.png') lightgray 3.681px 20.28px / 55.396% 28.975% no-repeat,
         linear-gradient(0deg, #fff 0%, #fff 100%), url('/image/buma avatar post.png') lightgray 50% / cover no-repeat;
         border-radius: 100%;
+        // border: 3.56px solid #AD6200;
     }
 
     &__header-content {
@@ -37,27 +38,21 @@
         border-radius: 20px;
     }
 
-    &__header-content-company {
+    &__header-content-user {
         display: flex;
         align-items: center;
         gap: 4px;
         align-self: stretch;
     }
 
-    &__header-content-company-name {
+    &__header-content-username {
         flex: 1 0 0;
-        color: #333F47;
-        font-family: Poppins;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
     }
 
     &__header-content-more-icon {
-        width: 24px;
-        height: 24px;
-        fill: #F5F8FA;
+        background-color: #F5F8FA;
+        border-radius: 100%;
     }
 
     &__header-content-position {
@@ -68,20 +63,13 @@
     }
 
     &__header-content-position-name {
-        color: #333F47;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__header-content-position-minus {
-        color: #333F47;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
+        line-height: 16px;
     }
 
     &__header-content-address {
@@ -97,18 +85,12 @@
 
     &__header-content-address-name {
         color: #047CDD;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__header-content-time {
         color: #7E93A8;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
@@ -124,31 +106,19 @@
     &__content-title {
         color: #333F47;
         text-align: justify;
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
         font-weight: 600;
-        line-height: 16px;
     }
 
     &__content-desc {
         align-self: stretch;
-        color: #333F47;
         text-align: justify;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__content-desc-more {
         align-self: stretch;
-        color: #7E93A8;
         text-align: right;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
@@ -184,51 +154,31 @@
     }
 
     &__engagements-likes {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__engagements-likes-name {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__engagements-border {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__engagements-comments {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
 
     &__engagements-comments-name {
-        color: #7E93A8;
         text-align: center;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
@@ -273,11 +223,7 @@
             }
 
             &-name {
-                color: #7E93A8;
                 text-align: center;
-                font-family: Poppins;
-                font-size: 12px;
-                font-style: normal;
                 font-weight: 500;
                 line-height: 16px;
             }
@@ -296,11 +242,7 @@
             }
 
             &-name {
-                color: #7E93A8;
                 text-align: center;
-                font-family: Poppins;
-                font-size: 12px;
-                font-style: normal;
                 font-weight: 500;
                 line-height: 16px;
             }
@@ -317,20 +259,10 @@
             &-icon {
                 width: 16px;
                 height: 16px;
-                &-green {
-                    color: green;
-                }
-                &-gray {
-                    color: gray;
-                }
             }
 
             &-name {
-                color: #7E93A8;
                 text-align: center;
-                font-family: Poppins;
-                font-size: 12px;
-                font-style: normal;
                 font-weight: 500;
                 line-height: 16px;
             }
@@ -357,134 +289,4 @@
             line-height: 16px;  
         }
     }
-
-    // &__feedback {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: flex-start;
-    //     gap: 12px;
-    // }
-
-    // &__feedback-header {
-    //     display: flex;
-    //     width: 638px;
-    //     align-items: center;
-    //     gap: 16px;
-    // }
-
-    // &__feedback-header-avatar {
-    //     display: flex;
-    //     width: 32px;
-    //     height: 32px;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     flex-shrink: 0;
-    //     color: #fff;
-    //     text-align: center;
-    //     font-family: Poppins;
-    //     font-size: 14px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 20px;
-    //     background-color: #DF0B92;
-    //     border-radius: 100%;
-    // }
-
-    // &__feedback-header-content {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: flex-start;
-    //     gap: 4px;
-    //     flex: 1 0 0;
-    //     border-radius: 20px;
-    // }
-
-    // &__feedback-header-content-top {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 4px;
-    //     align-self: stretch;
-    // }
-
-    // &__feedback-header-content-top-name {
-    //     flex: 1 0 0;
-    //     color: #333F47;
-    //     font-family: Poppins;
-    //     font-size: 16px;
-    //     font-style: normal;
-    //     font-weight: 700;
-    //     line-height: 20px;
-    // }
-
-    // &__feedback-header-content-top-time {
-    //     color: #7E93A8;
-    //     font-family: Poppins;
-    //     font-size: 12px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 16px;
-    // }
-
-    // &__feedback-header-content-bottom {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 8px;
-    //     align-self: stretch;
-    // }
-
-    // &__feedback-header-content-bottom-position {
-    //     color: #333F47;
-    //     font-family: Poppins;
-    //     font-size: 12px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 16px;
-    // }
-
-    // &__feedback-header-content-bottom-address {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 4px;
-    // }
-
-    // &__feedback-header-content-bottom-address-icon {
-    //     width: 16px;
-    //     height: 16px;
-    // }
-
-    // &__feedback-header-content-bottom-address-name {
-    //     color: #047CDD;
-    //     font-family: Poppins;
-    //     font-size: 12px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 16px;
-    // }
-
-    // &__feedback-content {
-    //     color: #333F47;
-    //     font-family: Poppins;
-    //     font-size: 12px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 16px;
-    // }
-
-    // &__feedback-content-reaction {
-    //     display: flex;
-    //     align-items: flex-start;
-    //     gap: 16px;
-    // }
-
-    // &__feedback-content-reaction-likes {
-    //     display: flex;
-    //     align-items: flex-start;
-    // }
-
-    // &__feedback-content-reaction-likes-button {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 8px;
-    // }
 }
