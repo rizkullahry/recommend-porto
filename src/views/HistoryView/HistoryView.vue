@@ -3,8 +3,8 @@
         <Header :item="dataHeader" />
         <div class="history-view__main">    
             <div class="history-view__back-button">
-                <img loading="lazy" src="/image/arrow-back.svg" class="history-view__back-button-icon">
-                <p class="history-view__back-button-name">Back to Home</p>
+                <Icon name="arrow_back" class="history-view__back-button-icon" :size="16" :isFilled="true"/>
+                <span class="history-view__back-button-name">Back to Home</span>
             </div>
             <div class="history-view__sections">
                 <div class="history-view__profile-section">
@@ -22,7 +22,7 @@
                                 :key="`comment-${index}`" 
                                 :item="comment" />
                         </template>
-                            <div v-if="post.commentsData?.length > 1" class="history-view__more-comments">
+                            <div class="history-view__more-comments">
                                 <p class="history-view__more-comments-name">Show more comments</p>
                             </div>
                     </div>

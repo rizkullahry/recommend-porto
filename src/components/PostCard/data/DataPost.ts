@@ -3,104 +3,78 @@ import type { PostCardProps } from '../types/PostCard';
 
 export const dataPostCard: PostCardProps[] = [
   {
+    id: 1,
     userProfile: {
-      avatar: '/image/postbuma-avatar.png', //dinamis
-      username: 'BUMA',
-      position: 'Intercom',
-      address: 'BUMA HO',
-      postTime: 'Yesterday at 17:06'
+      avatar: '/image/recommend-profile1.jpg', 
+      username: 'Lena Morales',
+      position: 'Senior Product Owner',
+      address: 'ZenoTech',
+      postTime: 'Today at 17:06',
+      avatarBorder: '#08A94C'
     },
     
-    title: 'Mars BUMA',
-    desc: 'Hay BUMAners,\n\nIni adalah Mars BUMA yang resmi diluncurkan tanggal 1 Januari 2019. Mars BUMA adalah karya dari Manusia BUMA sendiri lho, berikut adalah para creator Mars BUMA yang turut dalam pembuatannya:',
-    likes: 123,
-    comments: 31,
-    likesName: 'Likes',
-    commentsName: 'Comments',
+    title: 'Strategic, Positive, and Results-Driven',
+    desc: 'I had the pleasure of working with Rizku on a six-month product development cycle, and he quickly became the backbone of our team. Rizku blends strategic thinking with hands-on execution in a way that’s rare. He was instrumental in helping us launch ahead of schedule, and his insights directly contributed to a 30% increase in user engagement post-launch. Beyond his technical and creative abilities, Rizku brings a positive, solutions-focused energy that inspires everyone around him. I’d work with Rizku again in a heartbeat.',
+    likes: 10,
+    comments: 2,
     commentsDisable: false,
     commentsData: [{
-      name: 'Jane Doe',
-      position: 'System Analyst',
-      placeName: 'BUMA HO',
-      time: 'Today at 17:06',
-      content: 'Nice Post!',
+      name: 'Tanya L.',
+      position: 'UX Researcher',
+      placeName: 'ZenoTech',
+      time: 'Today at 19:10',
+      content: 'I couldn’t agree more. Rizku’s ability to balance high-level strategy with day-to-day execution is truly impressive',
       like: 5,
       children: [{
-          name: 'Rama Muhammad S',
-          position: 'UI Engineer',
-          placeName: 'BUMA HO',
-          time: 'Today at 17:46',
-          content: 'Cool!',
-          like: 3,
+          name: 'Mira Patel',
+          position: 'Digital Strategist',
+          placeName: 'ZenoTech',
+          time: 'Today at 19:26',
+          content: 'He’s also the kind of teammate you always want on a critical project.',
+          like: 1,
       }
       ]
   },
   {
-      name: 'Ilham Aditya',
-      position: 'System Analyst',
-      placeName: 'BUMA HO',
-      time: 'Yesterday at 17:46',
-      content: 'Muanteb',
+      name: 'Rizkullah Risly',
+      position: 'Undergraduate Student',
+      placeName: 'BINUS University',
+      time: 'Today at 17:46',
+      content: 'Thank you so much, Lena. It was an incredible experience working alongside such a talented and driven team.',
       like: 3,
-      avatar: '/image/postcomment1-avatar.png'
+      avatar: '/image/profpic.png'
   }]
     // hasComments: true
   },
   {
+    id: 2,
     userProfile: {
-      avatar: '/image/postbuma-avatar.png',
-      username: 'BUMA',
-      position: 'Intercom',
-      address: 'BUMA HO',
-      postTime: 'Yesterday at 17:06'
+      avatar: '/image/recommend-profile2.jpg',
+      username: 'Daniel Kwan',
+      position: 'Senior Product Manager',
+      address: 'BrightLayer Technologies',
+      postTime: 'Yesterday at 14:27',
+      avatarBorder: '#08A94C'
     },
-    title: 'Memorandum Pengaturan Sistem Kerja Hybrid Working',
-    desc: 'Yth. Rekan-rekan BUMA,\nBersama ini kami informasikan Memorandum No. MEMO/DIR/0014/VII/2023 perihal Pengaturan Sistem Kerja Hybrid Working. Untuk informasi selengkapnya, silakan mengunduh Memorandum terlampir.\n\n Demikian Memorandum ini kami sampaikan, terima kasih atas perhatiannya. <span style="color: #007bff; font-weight: 500;">#BukitMakmur</span>',  
+    title: "Proactive, Empathetic, and Technically Sharp",
+    desc: 'Rizku combines strategic clarity with sharp execution. During our six-month collaboration, he consistently turned complex challenges into focused, actionable plans. His solutions helped reduce design-to-dev time by 25%, and his presence lifted the entire team’s performance. Reliable under pressure and always composed, Rizku is someone I’d work with again without hesitation.<span style="color: #007bff; font-weight: 500;">#Recommended</span>',  
     likes: 38,
-    likesName: 'Likes',
-    commentsName: 'Comments',
-    commentsDisable: true,
-    commentsData: [{
-      name: 'Jane Doe',
-      position: 'System Analyst',
-      placeName: 'BUMA HO',
-      time: 'Today at 17:06',
-      content: 'Nice Post!',
-      like: 5,
-      children: [{
-          name: 'Rama Muhammad S',
-          position: 'UI Engineer',
-          placeName: 'BUMA HO',
-          time: 'Today at 17:46',
-          content: 'Cool!',
-          like: 3,
-      }
-      ]
+    commentsDisable: true
   },
   {
-      name: 'Ilham Aditya',
-      position: 'System Analyst',
-      placeName: 'BUMA HO',
-      time: 'Yesterday at 17:46',
-      content: 'Muanteb',
-      like: 3,
-      avatar: '/image/postcomment1-avatar.png'
-  }]
-  },
-  {
+    id: 3,
     userProfile: {
-      avatar: '/image/post3-avatar.png',
-      username: 'Mahfud Alamin',
-      position: 'Superintendent Production LAT',
-      address: 'BUMA LAT',
-      postTime: '02 Agu 2023 at 17:06'
+      avatar: '/image/recommend-profile3.jpg',
+      username: 'Michelle Anggraeni',
+      position: 'Engineering Manager',
+      address: 'Ardent Labs',
+      postTime: '31 May 2025 at 19:49',
+      avatarBorder: '#08A94C'
     },
-    title: 'Rapat Umum Pemegang Saham Tahunan',
-    desc: 'Saatnya kembali berkumpul dalam momentum penting tahunan kami! Kami dengan bangga mengundang seluruh pemegang saham untuk bergabung dalam Rapat Umum Pemegang Saham Tahunan (RUPST) kami dalam industri pertambangan. Acara ini merupakan kesempatan berharga untuk berbagi pencapaian kami sepanjang tahun, strategi masa depan, dan melibatkan pemegang saham dalam pengambilan keputusan yang mengarah ke kesuksesan bersama. ...',
+    title: 'Analytical, Creative, and Exceptionally Driven',
+    desc: 'Rizku quickly proved himself as a standout contributor. He introduced a front-end coding standard that became a team-wide benchmark and significantly cut onboarding time. He’s sharp, fast to adapt, and blends creativity with technical rigor—someone who elevates any project he’s part of.',
     likes: 57,
-    comments: 25,
-    likesName: 'Likes',
-    commentsName: 'Comments',
+    comments: 8,
     commentsDisable: false,
     commentsData: [{
       name: 'Jane Doe',
@@ -139,26 +113,18 @@ export const dataPostCard: PostCardProps[] = [
   }]
   },
   {
+    id: 4,
     userProfile: {
-      avatar: '/image/post4-avatar.png',
-      username: 'Sarah Annisa',
-      position: 'Analyst - HR Development ADT',
-      address: 'BUMA ADT',
-      postTime: '05 Agu 2023 at 17:06'
+      avatar: '/image/recommend-profile4.jpg',
+      username: 'Joshua Hartono',
+      position: 'Lead UX Engineer',
+      address: 'CloudNova Studio',
+      postTime: '25 May 2025 at 10:02',
+      avatarBorder: '#08A94C'
     },
-    title: 'Bekerja di BUMA',
-    desc: 'Dunia pertambangan batu bara telah memberi saya banyak pelajaran berharga. Setiap hari di lapangan adalah tantangan yang menguji batas kemampuan dan ketahanan. Meskipun kerasnya kondisi kerja, saya bangga menjadi bagian dari industri ini yang memainkan peran penting dalam menyediakan energi untuk dunia. Terima kasih kepada semua rekan kerja yang selalu bekerja keras dan menjaga keselamatan. 🛠️🌏💪 ...',
+    title: 'Analytical, Creative, and Exceptionally Driven',
+    desc: 'Working with Rizku was a refreshing experience. He brings empathy, curiosity, and technical sharpness to everything he does. Whether leading usability reviews or diving into Vue.js architecture, Rizku stays focused, user-driven, and helpful to the entire team. A thoughtful contributor who makes everyone better.',
     likes: 22,
-    likesName: 'Likes',
-    commentsDisable: false,
-    commentsData: [{
-      name: 'Jane Doe',
-      position: 'System Analyst',
-      placeName: 'BUMA HO',
-      time: 'Today at 17:06',
-      content: 'Nice Post!',
-      like: 5,
-      
-    }]
+    commentsDisable: false
   }
 ]

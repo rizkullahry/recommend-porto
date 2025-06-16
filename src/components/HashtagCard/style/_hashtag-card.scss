@@ -2,8 +2,8 @@
     display: flex;
     padding: 24px;
     flex-direction: column;
-    align-items: flex-start; 
-    gap: 4px;
+    align-items: flex-start;
+    gap: 4px; 
     align-self: stretch; // This is a flexbox property that 
     // aligns the item on the cross axis
     border-radius: 30px;
@@ -15,25 +15,12 @@
         gap: 4px;
     }
 
-    &__title-icon {
-        width: 24px;
-        height: 24px;
-    }
-
     &__title-text {
-        color: #047CDD;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
         font-weight: 500;
         line-height: 24px;
     }
 
     &__posts {
-        color: #7E93A8;
-        font-family: Poppins;
-        font-size: 12px;
-        font-style: normal;
         font-weight: 500;
         line-height: 16px;
     }
