@@ -6,21 +6,21 @@ export interface UserProfileProps {
     position: string;
     address: string;
     postTime: string;
+    avatarBorder: string;
 }
 
 export interface PostCardProps {
+    id: number;
     userProfile: UserProfileProps;
     title?: string;
     desc?: string;
-    likes: number; 
+    likes?: number; 
     comments?: number;
-    likesName?: string;
-    commentsName?: string;
     commentsDisable?: boolean;
     isLike?: boolean;
     isEditComment?: boolean;
     isCopy?: boolean;
-    commentsData: PostCardCommentProps[];
+    commentsData?: PostCardCommentProps[];
 }
 
 interface image {

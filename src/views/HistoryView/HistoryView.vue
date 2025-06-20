@@ -4,7 +4,7 @@
         <div class="history-view__main">    
             <div class="history-view__back-button">
                 <Icon name="arrow_back" class="history-view__back-button-icon" :size="16" :isFilled="true"/>
-                <p class="history-view__back-button-name">Back to Home</p>
+                <span class="history-view__back-button-name">Back to Home</span>
             </div>
             <div class="history-view__sections">
                 <div class="history-view__profile-section">
@@ -22,7 +22,7 @@
                                 :key="`comment-${index}`" 
                                 :item="comment" />
                         </template>
-                            <div v-if="post.commentsData?.length > 1" class="history-view__more-comments">
+                            <div class="history-view__more-comments">
                                 <p class="history-view__more-comments-name">Show more comments</p>
                             </div>
                     </div>

@@ -1,5 +1,6 @@
 export interface PostCardCommentProps {
     avatar?: string;
+    avatarBorder?: string;
     name?: string;
     position?: string;
     placeName?: string;

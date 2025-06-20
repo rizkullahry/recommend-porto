@@ -2,7 +2,6 @@ export interface ProfileCardProps {
     avatar?: string;
     name: string;
     desc: string;
-    locationIcon: string;
     location: string;
     email: string;
 } 
