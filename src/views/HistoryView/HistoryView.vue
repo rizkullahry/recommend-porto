@@ -22,9 +22,14 @@
                                 :key="`comment-${index}`" 
                                 :item="comment" />
                         </template>
-                            <div class="history-view__more-comments">
-                                <p class="history-view__more-comments-name">Show more comments</p>
-                            </div>
+                        <div class="history-view__more-comments" v-if="post.commentsData && post.commentsData.length > 1">
+                          <p
+                            class="history-view__more-comments-name"
+                            @click="showMoreComments(index)"
+                          >
+                            Show more comments
+                          </p>
+                        </div>
                     </div>
                 </div>
             </div>
